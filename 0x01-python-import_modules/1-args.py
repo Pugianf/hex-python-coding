@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-if __name__=="__main__":
+if __name__ == "__main__":
 
     import sys
 
@@ -15,8 +15,7 @@ if __name__=="__main__":
         print(':', sys.argv[1])
 
     else:
-        print('arguments:')
-        
+        print('arguments:') 
 
         for i in range(len(sys.argv) - 1):
             print(i + 1, end='')
