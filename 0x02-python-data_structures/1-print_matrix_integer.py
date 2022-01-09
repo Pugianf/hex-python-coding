@@ -3,7 +3,7 @@ def print_matrix_integer(matrix=[[]]):
     for row in matrix:
         cont = 0
         for elem in row:
-            if cont < len(row):
+            if cont < (len(row) - 1):
                 print("{:d}".format(elem), end=(" "))
                 cont += 1
             else:
