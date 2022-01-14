@@ -9,7 +9,7 @@ class Square:
         Args:
             size (int): size of the square
         Note:
-            ``Args`` section don't include `self` parameter
+            ``Args`` section doesn't include `self` parameter
         Raises:
             TypeError: if `size` isn't an integer
             ValueError: if `size` is less than 0
