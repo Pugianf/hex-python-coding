@@ -13,8 +13,7 @@ class Square:
         Raises:
             TypeError: if `size` isn't an integer
             ValueError: if `size` is less than 0
-        """
-        
+       """
         try:
             if isinstance(size, int) == True:
                 if size < 0:
