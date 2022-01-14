@@ -10,6 +10,9 @@ class Square:
             size (int): value to initialize `size`
         Note:
             ``Args`` section don't include `self` parameter.
+        Raises:
+            TypeError: if `size` isn't an integer
+            ValueError: if `size` is less than 0
         """
         
         try:
@@ -22,7 +25,7 @@ class Square:
             print('size must be >= 0')
 
         except TypeError:
-            print('size must be an integer'
+            print('size must be an integer')
 
-        else:)
+        else:
         self.__size = size
