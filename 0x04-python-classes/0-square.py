@@ -4,8 +4,6 @@
 
 class Square:
     """  Square is a class of squares """
-
-
     def __init__(self, size):
         """initializes attributes
         Args:
@@ -13,5 +11,4 @@ class Square:
         Note:
             ``Args`` section don't include `self` parameter.
         """
-
         self.__size = size
