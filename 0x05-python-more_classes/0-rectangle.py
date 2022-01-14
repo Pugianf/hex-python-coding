@@ -28,16 +28,16 @@ class Rectangle:
 
         @property
         def width(self):
-            """Property to retrieve the value of 'width'"""
+            """property to retrieve the value of 'width'"""
             return self.__weight
 
         @property
         def height(self):
-            """Property to retrieve the value of 'height'"""
+            """property to retrieve the value of 'height'"""
             return self.__height
 
         @width.setter(self, width):
-            """Setter to input new width value
+            """property setter method
             Args:
                 width (int): value to be set
             Raises:
@@ -51,7 +51,7 @@ class Rectangle:
             self.__width = width
 
         @height.setter(self, height):
-            """Setter to input new height value
+            """property setter method
             Args:
                 height (int): value to be set
             Raises:
