@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-
-""" module that creates a class with an initialization function """
+"""module that creates a class with an initialization function"""
 
 class Square:
 
