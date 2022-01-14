@@ -14,4 +14,4 @@ def __init__(self, size):
          ``Args`` section don't include `self` parameter.
     """
 
-    self.__size = size
+   self.__size = size
