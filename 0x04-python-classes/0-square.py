@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""module that creates a class with an initialization function"""
+"""Creating a class square"""
 
 class Square:
 
