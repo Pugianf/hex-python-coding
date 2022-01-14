@@ -38,6 +38,8 @@ class Rectangle:
 
         @width.setter(self, width):
             """Setter to input new width value
+            Args:
+                width (int): value to be set
             Raises:
                 TypeError: if 'width' isn't an integer
                 ValueError: if 'width' is less than 0
@@ -50,6 +52,8 @@ class Rectangle:
 
         @height.setter(self, height):
             """Setter to input new height value
+            Args:
+                height (int): value to be set
             Raises:
                 TypeError: if 'height' isn't an integer
                 ValueError: if 'height' is less than 0
