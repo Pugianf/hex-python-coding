@@ -49,10 +49,10 @@ class Square:
 
     def my_print(self):
         """Function that prints a square with '#' and new line if square is 0"""
-        if (__size == 0):
+        if (self.__size == 0):
             print('')
         else:
-            for a in range(__size):
-                for b in range(__size):
+            for a in range(self.__size):
+                for b in range(self.__size):
                     print('#', end='')
                 print('')
