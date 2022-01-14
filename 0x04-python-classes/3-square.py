@@ -9,7 +9,7 @@ class Square:
         Args:
             size (int): size of the square
         Note:
-            ``Args`` section doesn't include `self` parameter
+            ``Args`` section don't include `self` parameter
         Raises:
             TypeError: if `size` isn't an integer
             ValueError: if `size` is less than 0
@@ -28,21 +28,21 @@ class Square:
         return (self.__size ** 2)
 
     @property
-    def size(self)
-        """Property to retrieve value of 'size'"""
+    def size(self):
+        """Property to retrive value of `size`"""
         return self.__size
 
     @size.setter
     def size(self, value):
-        """Sets the value of 'value'
+        """Sets the value of `value`
         Args:
-            value (int): value to be set to 'value'
+            value (int): value to be set to `value`
         Raise:
-            TypeError: if 'value' isn't an integer
-            ValueError: if 'value' is less than 0
+            TypeError: if `value` isn't an integer
+            ValueError: if `value` is less than 0
         """
         if not isinstance(value, int):
-            raise TypeError('size must be an integer')
+            raise TypeError("size must be an integer")
         if (value < 0):
-            raise ValueError('size must be >=0')
+            raise ValueError("size must be >= 0")
         self.__size = value
