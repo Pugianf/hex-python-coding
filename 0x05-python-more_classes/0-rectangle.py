@@ -1,65 +1,67 @@
 #!/usr/bin/python3
-"""Creating a class rectangle"""
+"""defines class Rectangle"""
 
 
 class Rectangle:
-    """Derives a rectangle"""
+    """Define the variable or attribute in the principal method"""
     def __init__(self, width=0, height=0):
-        """initialize attributes
+        """initializes attributes
         Args:
             width (int): width of the rectangle
-            heigth (int): height of the rectangle
+            height (int): height of the rectangle
         Note:
-            ''Args'' section doesn't include 'self' parameter
-        Raises:
-            TypeError: if 'width' or 'height' isn't an integer
-            ValueError: if 'width' or 'height' is less than 0
+            ``Args`` section don't include `self` parameter
         """
         if not isinstance(width, int):
-            raise TypeError('width must be an integer')
+            raise TypeError("width must be an integer")
         if (width < 0):
-            raise ValueError('width must be >= 0')
+            raise ValueError("width must be >= 0")
         if not isinstance(height, int):
-            raise TypeError('height must be an integer')
+            raise TypeError("height must be an integer")
         if (height < 0):
-            raise ValueError('height must be >= 0')
-        self.__width = width
+            raise ValueError("height must be >= 0")
         self.__height = height
+        self.__width = width
 
-        @property
-        def width(self):
-            """property to retrieve the value of 'width'"""
-            return self.__weight
+    @property
+    def width(self):
+        """property to retrive value of `width`"""
+        return self.__width
 
-        @property
-        def height(self):
-            """property to retrieve the value of 'height'"""
-            return self.__height
+    @width.setter
+    def width(self, value):
+        """property setter method
+        Args:
+            value (int): value to be set
+        Raises:
+            TypeError: if `value` isn't an integer
+            ValueError: if `value` is less than 0
+        """
+        if (type(value) is not int and type(value) is not float):
+            raise TypeError("width must be an integer")
+        if (value < 0):
+            raise ValueError("width must be >= 0")
+        self.__width = value
+        return value
 
-        @width.setter(self, width):
-            """property setter method
-            Args:
-                width (int): value to be set
-            Raises:
-                TypeError: if 'width' isn't an integer
-                ValueError: if 'width' is less than 0
-            """
-            if not isinstance(width, int):
-                raise TypeError('width must be an integer')
-            if (width < 0):
-                raise ValueError('width must be >= 0')
-            self.__width = width
+    @property
+    def height(self):
+        """property to retrive value of `height`"""
+        return self.__height
 
-        @height.setter(self, height):
-            """property setter method
-            Args:
-                height (int): value to be set
-            Raises:
-                TypeError: if 'height' isn't an integer
-                ValueError: if 'height' is less than 0
-            """
-            if not instance (height, int):
-                raise TypeError('height must be an integer')
-            if (height < 0):
-                raise ValueError('height must be >= 0')
-            self.__height = height
+    @height.setter
+    def height(self, value):
+        """property setter method
+        Args:
+            value (int): value to be set
+        Raises:
+            TypeError: if `value` isn't an integer
+            ValueError: if `value` is less than 0
+        """
+
+        if (type(value) is not int and type(value) is not float):
+            raise TypeError("height must be an integer")
+        if (value < 0):
+            raise ValueError("height must be >= 0")
+        self.__height = value
+        return value
