@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+""" module that creates a class with an initialization function """
+
 class Square:
 
 """  Square is a class of squares """
