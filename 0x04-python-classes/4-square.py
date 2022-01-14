@@ -48,7 +48,7 @@ class Square:
         self.__size = value
 
     def my_print(self):
-        """Function that prints a square with '#' and new line if square is 0"""
+        """Function that prints a square with # and new line if square is 0"""
         if (self.__size == 0):
             print('')
         else:
