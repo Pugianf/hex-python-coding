@@ -7,7 +7,11 @@ class Square:
 
 
     def __init__(self, size):
-    """ function to initialize the private attribute size """
-
+        """initializes attributes
+        Args:
+            size (int): value to initialize `size`
+        Note:
+            ``Args`` section don't include `self` parameter.
+        """
 
         self.__size = size
