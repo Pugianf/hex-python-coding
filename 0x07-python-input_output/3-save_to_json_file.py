@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""module that adds a json loads"""
+"""module that writes and save a json to file"""
 
 
 import json
 
 
 def save_to_json_file(my_obj, filename):
-    """saves json to a file"""
+    """writes and saves a json dumps to a new file"""
     with open(filename, 'w', encoding='utf-8') as fn:
         x = fn.write(json.dumps(my_obj)
     return x
