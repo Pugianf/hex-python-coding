@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 """model that creates the 'base' class"""
 
-
 import os.path
 
 
-class Base():
+class Base:
     """beginning of the Base class"""
 
     __nb_objects = 0
