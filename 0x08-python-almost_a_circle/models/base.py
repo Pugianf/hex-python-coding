@@ -2,6 +2,7 @@
 """model that creates the 'base' class"""
 
 import os.path
+import json
 
 
 class Base:
