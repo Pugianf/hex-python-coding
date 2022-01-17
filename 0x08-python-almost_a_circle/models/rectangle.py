@@ -90,3 +90,31 @@ class Rectangle(Base):
         i, w, h = self.id, self.width, self.height
         x, y = self.x, self.y
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(i, x, y, w, h))
+
+    def update(self, *args, **kwargs):
+        """method that assigns an argument to each attibute"""
+        if args:
+            if len(args) == 5:
+                self.id = args[0]
+                self.width = args[1]
+                self.height = args[2]
+                self.x = args[3]
+                self.y = args[4]
+            if len(args) == 4:
+                self.id = args[0]
+                self.width = args[1]
+                self.height = args[2]
+                self.x = args[3]
+            if len(args) == 3:
+                self.id = args[0]
+                self.width = args[1]
+                self.height = args[2]
+            if len(args) == 2:
+                self.id = args[0]
+                self.width = args[1]
+            if len(args) == 1:
+                self.id = args[0]
+        else:
+            for key, value in kwargs.items():
+                if hasattr(self, key) is True:
+                    setattr(self, key, value)
